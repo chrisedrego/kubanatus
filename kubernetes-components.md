@@ -20,3 +20,12 @@ Kubernetes at a Higher-Level contains two type of components:
 - Kube-apiserver is responsible for most of the heavy lifting that is done by kubernetes
 - Kube-apiserver can be scaled horizontally in this case, we can have multiple instance of the kube-api-server running which
 can be loadbalanced.
+
+
+### etcd
+- etcd is highly available key-value datastore in kubernetes, that stores all the cluster data.
+
+
+### kube-scheduler
+- As the name suggest, kube-scheduler goes ahead and scheuled
+ab
