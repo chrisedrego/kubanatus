@@ -5,6 +5,9 @@
 - Portable accross multiple platform, a container present on Azure Kubernetes Service can run on EKS on Amazon while as the 
 same could also run on your local Rasberry pie setup for kubernetes.
 
+### MicroService Ready
+- Kubernetes comes along with loads of features which makes MicroServices ready, so that we can deploy application which can be easily scaled, loosely coupled. 
+
 ### Self-Healing
 - Previously, if one instance of the application used to fails, it was the responsibility of the ops to spin up another instance of the application to avoid further downtime, with the help of Kubernetes that has been taken care with the help controllers such as Deployments/RC/RS so that if one instance of the application dies it can intiate another instance of the same application to be provisioned with minimal downtime 
 
@@ -16,4 +19,4 @@ same could also run on your local Rasberry pie setup for kubernetes.
 - As already discussed before, all the application workloads runs on pods/containers it helps to provide a consistent environment accross various tages which involes Dev, QA and Production.
 
 ### Ready-for-new Changes + Faster Development + Faster Release/Deployment
-- 
+- With the help of Deployments in Kubenetes, we can role out new features on the fly without downtime.
