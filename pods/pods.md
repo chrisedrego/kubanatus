@@ -28,3 +28,4 @@
   - Multiple Containers that run are tightly coupled
   
  
+- We can have pods with the same name, in different Namespaces.
