@@ -6,8 +6,14 @@
 1. One Pod - One Container
 2. One Pod - Multiple Containers.
 
+- In terms of 
 - There are two types Containers:
 
 1. SideCar Containers:
 - These containers as the name suggest are side containers, which assist the main containers.
 
+2. Ambassador Containers:
+- These containers proxy a local connection to the world.
+
+3. Adapter Containers.
+- 
