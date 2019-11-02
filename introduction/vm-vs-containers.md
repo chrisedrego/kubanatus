@@ -10,4 +10,6 @@
 
 - When VM runs in that case a application running inside of the VM is more isolated as compared to the same application running inside of the container, In the case of VM, it has its own host so that encures another booting time to boot up the vm but the same isnt the case when container is present.
 
-- When we have like lets say 4 VMS in that case we have four applications running inside of each VM, 
+- In the case of Type 2 VM , When we have like lets say 4 VMS in that case we have four applications running inside of each VM, in this case each request for a resource for by the application first reaches the Guest VM (Opearing System) after which the request is handed over to the Base OS and finally the request is hand over to the Underlying Hardware. Example of Type 2 VM is VMWARE Player, Virtualbox.
+
+- In the case of Type 1 VM, when the application running inside of the VM request for the resource to the Guest OS the request is forwarded to the Hypervisor which runs at lower level and has access to the hardware thereby, the overall performance is better in this case as compared to Type 1 VM, Example of Type1 VM is Hyper-V
