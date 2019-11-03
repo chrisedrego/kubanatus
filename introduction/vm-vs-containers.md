@@ -13,3 +13,7 @@
 - In the case of Type 2 VM , When we have like lets say 4 VMS in that case we have four applications running inside of each VM, in this case each request for a resource for by the application first reaches the Guest VM (Opearing System) after which the request is handed over to the Base OS and finally the request is hand over to the Underlying Hardware. Example of Type 2 VM is VMWARE Player, Virtualbox.
 
 - In the case of Type 1 VM, when the application running inside of the VM request for the resource to the Guest OS the request is forwarded to the Hypervisor which runs at lower level and has access to the hardware thereby, the overall performance is better in this case as compared to Type 1 VM, Example of Type1 VM is Hyper-V
+
+- While when it comes to containers , the dont have their own OS and hence they have one shared kernel which the Base OS kernel that they interact with in terms of the system calls for the request of the hardware resources.
+
+- The Only tradeoff here is that as all the containers which are present acquire the same kernel which makes it vulnerable while as in the case of Virtual machine they are fully isolated, but all of this agains comes with pricetag of undue resource utilization in the case of VM, as each of the VM have their own separate OS.
